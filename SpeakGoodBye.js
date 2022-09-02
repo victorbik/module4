@@ -24,12 +24,11 @@
 // 'byeSpeaker' on the global scope as well.
 // xxxx.xxxx = byeSpeaker;
 
-(function(window){
+(function (window){
   var byeSpeaker = {};
-  byeSpeaker.speak = [];
-  var speakWord = "Good bye ";
-  byeSpeaker.speak = function () {
-    console.log(speakWord + " " + byeSpeaker.speak);
+  var speakWord ="Good bye ";
+  byeSpeaker.speak = function (name) {
+    console.log(speakWord + name)
   }
   window.byeSpeaker = byeSpeaker;
 })(window);
